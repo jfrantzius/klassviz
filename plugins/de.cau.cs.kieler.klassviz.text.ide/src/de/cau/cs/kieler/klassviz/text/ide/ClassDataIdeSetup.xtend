@@ -24,6 +24,10 @@ import org.eclipse.xtext.util.Modules2
  */
 class ClassDataIdeSetup extends ClassDataStandaloneSetup {
 
+	def static void doSetup() {
+		new ClassDataIdeSetup().createInjectorAndDoEMFRegistration()
+	}
+
 	override createInjector() {
 		Guice.createInjector(Modules2.mixin(new ClassDataRuntimeModule, new ClassDataIdeModule))
 	}

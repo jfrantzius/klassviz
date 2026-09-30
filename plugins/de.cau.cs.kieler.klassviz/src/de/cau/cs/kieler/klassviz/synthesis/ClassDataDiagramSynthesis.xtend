@@ -110,7 +110,7 @@ final class ClassDataDiagramSynthesis extends AbstractDiagramSynthesis<KClassMod
         SynthesisOption::createChoiceOption(
             "Visualization of Attributes/Methods",
             ImmutableList::of(VISUALIZE_SELECTION, VISUALIZE_ALL),
-            VISUALIZE_SELECTION)
+            VISUALIZE_ALL)
 
     private static val SynthesisOption CLASSES_SEPARATOR =
         SynthesisOption::createSeparator("Classes")
